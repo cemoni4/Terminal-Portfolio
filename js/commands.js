@@ -120,7 +120,7 @@ Built With:
 - Scapy
 </pre>`,
 
-  `<a href="https://github.com/cemoni4/Personal-Portfolio" target="_blank"><span class='underline'>Personal Portfolio Website</span></a>`,
+  `<a href="https://github.com/cemoni4/Terminal-Portfolio" target="_blank"><span class='underline'>Personal Portfolio Website</span></a>`,
   `<pre class="indent-8 whitespace-pre-wrap break-words overflow-x-auto">
 Hacker-style personal website using HTML, CSS, and JavaScript, hosted on Oracle Cloud to showcase projects and CV.
 Built With:

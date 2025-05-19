@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Cemoni" />
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/39565093f3.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function close_window() {
+        if (confirm("Close Window?")) {
+          window.location.href = "about:blank";
+        }
+      }
+    </script>
+    <title>Davide_Temelie</title>
+  </head>
+  <body>
+    <div class="terminal-window" role="main">
+      <header role="banner" aria-label="Site Header">
+        <a
+          href="https://github.com/cemoni4"
+          target="_blank"
+          aria-label="GitHub Profile"
+        >
+          <i
+            class="fa-brands fa-github header-icon github-icon"
+            aria-hidden="true"
+          ></i>
+        </a>
+
+        <div class="centered" aria-hidden="true">
+          <span>127.0.0.1</span>
+        </div>
+
+        <a
+          href="#"
+          onclick="close_window(); return false;"
+          aria-label="Close Window"
+        >
+          <i
+            class="fa-solid fa-circle-xmark header-icon close-icon"
+            aria-hidden="true"
+          ></i>
+        </a>
+      </header>
+
+      <hr aria-hidden="true" />
+
+      <div id="contentscroll">
+        <div class="content-container">
+          <div class="ascii-Hero" role="presentation" aria-hidden="true">
+            <pre class="ascii">
+              ╔═════════════════════════════╗
+              ║  CEMONI/ DAVIDE TEMELIE     ║
+              ╚═════════════════════════════╝
+
+
+            </pre>
+          </div>
+
+          <section class="profile-info" aria-labelledby="profile-heading">
+            <h1 id="profile-heading" class="sr-only">Profile Information</h1>
+
+            <div class="info-item">
+              <div class="name">
+                <i class="fa-solid fa-address-card" aria-hidden="true"></i>
+                <span>Davide Temelie</span>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <i class="fa-solid fa-file-invoice" aria-hidden="true"></i>
+              <span>Resume</span>
+              <a
+                href="./Curriculum.pdf"
+                class="link-text"
+                target="_blank"
+                aria-label="Download my resume"
+                >→ &nbsp;Download my resume...</a
+              >
+            </div>
+
+            <div class="info-item">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+              <span>GitHub</span>
+              <a
+                href="https://github.com/cemoni4"
+                class="link-text"
+                target="_blank"
+                aria-label="GitHub cemoni4"
+                >→ &nbsp;github/cemoni4</a
+              >
+            </div>
+
+            <div class="info-item">
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+              <span>LinkedIn</span>
+              <a
+                href="https://www.linkedin.com/in/davide-temelie-581b27319/"
+                class="link-text"
+                target="_blank"
+                aria-label="LinkedIn DavideTemelie"
+                >→ &nbsp;linkedin/davideTemelie</a
+              >
+            </div>
+          </section>
+        </div>
+
+        <section id="terminal" aria-label="Terminal Emulator">
+          <a id="before"></a>
+
+          <div
+            id="command"
+            onclick="document.getElementById('texter').focus();"
+          >
+            <label for="texter" class="sr-only">Command Input</label>
+            <input
+              type="text"
+              id="texter"
+              class="texter"
+              aria-label="Command line input"
+              onkeyup="typeIt(this, event)"
+              onkeydown="typeIt(this, event); moveIt(this.value.length, event)"
+              onkeypress="typeIt(this, event);"
+            />
+            <div id="liner">
+              <span id="typer" aria-live="polite"></span
+              ><b class="cursor" id="cursor" aria-hidden="true">█</b>
+              <div class="list" aria-hidden="true"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <script src="js/theme.js" defer></script>
+      <script src="js/caret.js" defer></script>
+      <script src="js/commands.js" defer></script>
+      <script src="js/main.js" defer></script>
+    </div>
+  </body>
+</html>
